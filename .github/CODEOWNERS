@@ -1,0 +1,62 @@
+# CODEOWNERS - Define who owns what parts of the repository
+
+# Documentation
+/docs/ @milyfe/docs-team
+
+# Architecture and decisions
+/docs/architecture/ @milyfe/architecture-team
+/docs/decisions/ @milyfe/architecture-team
+/adr/ @milyfe/architecture-team
+
+# Contracts
+/docs/contracts/ @milyfe/contracts-team
+/contracts/ @milyfe/contracts-team
+
+# Security
+/docs/security/ @milyfe/security-team
+/SECURITY.md @milyfe/security-team
+
+# Kernel OS
+/docs/agent/kernel/ @milyfe/kernel-team
+
+# Onboarding OS
+/docs/agent/onboard/ @milyfe/onboard-team
+
+# Psyche OS
+/docs/agent/psyche/ @milyfe/psyche-team
+
+# Agent OS
+/docs/agent/agent/ @milyfe/agent-team
+
+# Market OS
+/docs/agent/market/ @milyfe/market-team
+
+# Forge OS
+/docs/agent/forge/ @milyfe/forge-team
+
+# Money OS
+/docs/agent/money/ @milyfe/money-team
+
+# Scale OS
+/docs/agent/scale/ @milyfe/scale-team
+
+# Device OS
+/docs/agent/device/ @milyfe/device-team
+
+# Security OS
+/docs/agent/security/ @milyfe/security-team
+
+# Dev OS
+/docs/agent/dev/ @milyfe/dev-team
+
+# Tests
+/tests/ @milyfe/test-team
+
+# Operations
+/ops/ @milyfe/ops-team
+
+# Root files
+AGENTS.md @milyfe/core-team
+SECURITY.md @milyfe/security-team
+CONTRIBUTING.md @milyfe/core-team
+CODE_OF_CONDUCT.md @milyfe/core-team

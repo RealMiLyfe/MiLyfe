@@ -1,0 +1,71 @@
+name: Feature Request
+description: Request a new feature
+title: "[FEATURE]: "
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: input
+    id: issue-id
+    attributes:
+      label: Issue ID
+      description: Leave blank for maintainers to fill in
+      placeholder: e.g., MLY-1234
+    validations:
+      required: false
+  - type: textarea
+    id: user-outcome
+    attributes:
+      label: User or System Outcome
+      description: What would you like to be able to do?
+      placeholder: Describe the feature you'd like to see...
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like to see this implemented?
+      placeholder: Describe your proposed solution...
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions?
+      placeholder: Describe any alternatives you've considered...
+    validations:
+      required: false
+  - type: dropdown
+    id: affected-os
+    attributes:
+      label: Affected OS
+      description: Which operating system(s) would this affect?
+      multiple: true
+      options:
+        - kernel
+        - onboard
+        - psyche
+        - agent
+        - market
+        - forge
+        - money
+        - scale
+        - device
+        - security
+        - dev
+    validations:
+      required: true
+  - type: checkboxes
+    id: considerations
+    attributes:
+      label: Considerations
+      description: Please consider the following:
+      options:
+        - label: This feature request is related to a problem I'm facing
+          required: true
+        - label: I have searched the existing issues for similar requests
+          required: true

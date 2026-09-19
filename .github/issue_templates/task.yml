@@ -1,0 +1,95 @@
+name: Task
+description: Define a development task
+title: "[TASK]: "
+labels: ["type:task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to define this task!
+  - type: input
+    id: issue-id
+    attributes:
+      label: Issue ID
+      description: Leave blank for maintainers to fill in
+      placeholder: e.g., MLY-1234
+    validations:
+      required: false
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What is the objective of this task?
+      placeholder: Describe the goal of this task...
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this task? What are the boundaries?
+      placeholder: Describe what is in scope and what is out of scope...
+    validations:
+      required: true
+  - type: textarea
+    id: non-goals
+    attributes:
+      label: Non-Goals
+      description: What is explicitly NOT part of this task?
+      placeholder: Describe what is intentionally excluded...
+    validations:
+      required: false
+  - type: dropdown
+    id: affected-os
+    attributes:
+      label: Affected OS
+      description: Which operating system(s) does this task affect?
+      multiple: true
+      options:
+        - kernel
+        - onboard
+        - psyche
+        - agent
+        - market
+        - forge
+        - money
+        - scale
+        - device
+        - security
+        - dev
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What other tasks or issues does this depend on?
+      placeholder: List any dependencies...
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know when this task is complete?
+      placeholder: Describe the criteria for completion...
+    validations:
+      required: true
+  - type: textarea
+    id: test-requirements
+    attributes:
+      label: Test Requirements
+      description: What tests are required to verify this task?
+      placeholder: Describe the testing approach...
+    validations:
+      required: false
+  - type: checkboxes
+    id: considerations
+    attributes:
+      label: Considerations
+      description: Please consider the following:
+      options:
+        - label: This task is related to an existing issue
+          required: false
+        - label: I have checked for similar existing tasks
+          required: true
